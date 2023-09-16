@@ -17,5 +17,6 @@ jobs:
           npx husky install
           npx webpack --mode=production
           npm publish --ignore-scripts
+          npm run semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
